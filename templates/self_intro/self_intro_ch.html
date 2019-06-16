@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Eri Hung</title>
+<link href="https://goo.gl/puQyJ1" rel="SHORTCUT ICON">
+<style>
+#back{
+		float: left;
+		width: 350px;
+		height: 200px;
+}
+#change{
+		float: left;
+		width: 350px;
+		height: 200px;
+}
+#center{
+		float: left;
+		width: 800px;
+		height: 140px;
+		padding-top: 60px;
+		text-align:	center;
+		/* font-family: 嚙請瘀蕭嚙踝蕭; */
+		font-weight: bold;
+		font-size: 80px;
+		color: white;
+}
+#content{
+		width: 800px;
+		color: yellow;
+		padding-left: 350px;
+}
+#tabletitle{
+		background-color: red;
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		font-size: 30px;
+		height: 35px;
+		width: 50%;
+		/* font-family: 嚙請瘀蕭嚙踝蕭; */
+}
+#copyright{
+		color: gray;
+		font-size: 12px;
+		text-align: center;
+}
+</style>
+</head>
+<body bgcolor="black">
+<div id="back" align="center"><a href="/about" target="_self">
+<img src="{{ url_for('static', filename='picture/hand.gif')}}" width=100% title="返回"/></a></div>
+<div id="center">自我介紹</div>
+<div id="change">
+<a href="/self_intro/self_intro_eng" target="_self"><img src="https://goo.gl/MBUHgg" width=100% title="English"/></a></div>
+<div id="content">
+<table width=800px align="center">
+<tr>
+		<td rowspan="8"><img src="{{ url_for('static', filename='picture/picture2.gif')}}" width=100%/></td>
+		<td id="tabletitle">姓名</td>
+</tr>
+<tr><td align="center">洪晟瑞</td></tr>
+<tr><td id="tabletitle">性別</td></tr>
+<tr><td align="center">男</td></tr>
+<tr><td id="tabletitle">工作</td></tr>
+<tr><td align="center">學生</td></tr>
+<tr><td id="tabletitle">信箱</td></tr>
+<tr><td align="center"><a href="mailto:eritup45@gmail.com" title="信箱"color="red">eritup45@gmail.com</a></td></tr>
+
+<tr><td id="tabletitle" colspan="2">就讀學校</td></tr>
+<tr><td colspan="2" align="center">國立中正大學</br>資訊工程學系</br>
+		<a href="/self_intro/edu_ch" target="_self">(過去就讀學校)</a>
+</td></tr>
+<tr><td id="tabletitle" colspan="2">興趣</td></tr>
+<tr><td colspan="2">
+		<ul>
+				<li>打羽球</li>
+				<li>看電影</li>
+				<li>聽音樂</li>
+		</ul>
+</td></tr>
+</table>
+<a href="https://www.facebook.com/eritup45?ref=bookmarks" target="_blank" align="center">
+<img src="{{ url_for('static', filename='picture/facebook.png')}}" title="facebook" width="50"/></a>
+<a href="https://www.instagram.com/eritup45/?hl=zh-tw" target="_blank"><img src="{{ url_for('static', filename='picture/Instagram.png')}}" title="Instagram" width="45"/></a>
+<p id="copyright"><img src="{{ url_for('static', filename='picture/copy.png')}}" width="15"/> Copyright 2019 Eri Hung. All Rights Reserved.</p>
+</div>
+</body>
+</html>

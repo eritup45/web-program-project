@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eri Hung</title>
+    <link href="https://goo.gl/puQyJ1" rel="SHORTCUT ICON">
+    <style>
+        #back {
+            float: left;
+            width: 23%;
+            height: 35%;
+        }
+        
+        #change {
+            float: left;
+            width: 23%;
+            height: 35%;
+        }
+        
+        #center {
+            float: left;
+            width: 54%;
+            height: 24.5%;
+            padding-top: 10.5%;
+            text-align: center;
+            font-family: STXingkai;
+            font-weight: bold;
+            font-size: 450%;
+            color: white;
+        }
+        
+        #content {
+            width: 54%;
+            color: yellow;
+            padding-left: 23%;
+        }
+        
+        #tabletitle {
+            background-color: red;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            height: 35px;
+            width: 50%;
+            font-family: STLiti;
+        }
+        
+        #copyright {
+            color: gray;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <div id="back" align="center">
+        <a href="/about" target="_self">
+            <img src="{{ url_for('static', filename='picture/hand.gif')}}" width=100% title="Go Back" />
+        </a>
+    </div>
+    <div id="center">Introduction</div>
+    <div id="change">
+        <a href="https://goo.gl/yRmrcA" target="_self">
+            <img src="https://goo.gl/MBUHgg" width=100% title="����" />
+        </a>
+    </div>
+    <div id="content">
+        <table align="center">
+            <tr>
+                <td rowspan="8">
+                    <img src="https://goo.gl/yDo8Kk" width=100%/>
+                </td>
+                <td id="tabletitle">Name</td>
+            </tr>
+            <tr>
+                <td align="center">Eri Hung</td>
+            </tr>
+            <tr>
+                <td id="tabletitle">Gender</td>
+            </tr>
+            <tr>
+                <td align="center">Male</td>
+            </tr>
+            <tr>
+                <td id="tabletitle">Job</td>
+            </tr>
+            <tr>
+                <td align="center">Student</td>
+            </tr>
+            <tr>
+                <td id="tabletitle">E-mail</td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <a href="mailto:eritup45@gmail.com" title="Mail to me" color="red">eritup45@gmail.com</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="tabletitle" colspan="2">Current School</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">National Chung Cheng University</br>Computer Science and Information Engineering</br>
+                    <a href="/self_intro/edu_eng" target="_self">(Education Process)</a>
+                </td>
+            </tr>
+            <tr>
+                <td id="tabletitle" colspan="2">Interest</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>playing the badminton</li>
+                        <li>watching movies</li>
+                        <li>listenning to music</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <a href="https://www.facebook.com/eritup45?ref=bookmarks" target="_blank" align="center">
+            <img src="{{ url_for('static', filename='picture/facebook.png')}}" title="My facebook" width="50" />
+        </a>
+        <a href="https://www.instagram.com/eritup45/?hl=zh-tw" target="_blank">
+            <img src="{{ url_for('static', filename='picture/Instagram.png')}}" title="My Instagram" width="45" />
+        </a>
+        <p id="copyright">
+            <img src="{{ url_for('static', filename='picture/copy.png')}}" width="15" /> Copyright 2019 Eri Hung. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!-- Since "render_template" in app.py, 'home.html' and 'layout.html' should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!-- Write "HOME" between the label of 'layout.html'. -->
+{% block body %}
+    <!--HOME-->
+
+    <div class="jumbotron text-center">
+            <h1>PTT FAST VIEWER</h1>
+            <p class="lead">HOME</p>
+            <form method="GET">
+                請輸入想看的關鍵字：<input id="search_name" type="text" name="search_name" placeholder="EX.正妹">
+                <input type="submit" value="搜尋">
+            </form>
+            {% for key, value in result.items() %}
+                <p>>{{ key }} 網址:<a href="{{ value }}">{{ value }}</a></p> 
+            {% endfor %}
+    </div>
+{% endblock %}
+
+

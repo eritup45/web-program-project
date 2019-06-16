@@ -1,0 +1,19 @@
+<!-- should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!-- Write the articles' title from data.py, and make links to articles/1, 2... -->
+{% block body %}
+    <div align="center">
+    <h1>使用方法:</h1>
+    <p>
+        <h3>1. 在輸入框中輸入想要搜尋的關鍵字</h3>
+        <img src="{{ url_for('static', filename='how2use/how2use1.png')}}" align="center" width="50%" />
+        <h3>2. 按下搜尋後即可找到含關鍵字的網站，並且附上網址</h3>
+        <img src="{{ url_for('static', filename='how2use/how2use2.png')}}" align="center" width="50%" />
+
+    </p>
+    </div>
+    
+{% endblock %}

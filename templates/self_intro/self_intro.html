@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eri Hung</title>
+    <meta charset="UTF-8">
+    <link href="https://goo.gl/puQyJ1" rel="SHORTCUT ICON">
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+        
+        #head {
+            width: 100%;
+            height: 350px;
+            background: url(https://goo.gl/K2ZQAj);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+        }
+        
+        h1 {
+            font-family: STXingkai;
+            font-weight: bold;
+            font-size: 65px;
+            text-align: left;
+            margin: 0 auto;
+            color: white;
+        }
+        
+        h2 {
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 40px;
+            font-family: STLiti;
+        }
+        
+        input {
+            background: red;
+            border: 3px orange double;
+            width: 100px;
+            height: 40px;
+            font-size: 25px;
+        }
+        
+        #copyright {
+            color: gray;
+            font-size: 12px;
+            text-align: center;
+        }
+		
+		#back {
+            float: left;
+            width: 15%;
+            height: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+		<div id="back">
+			<!-- <a href="home.html" target="_self"> -->
+            <a href="/" target="_self">
+                <img src="{{ url_for('static', filename='picture/hand.gif')}}" align="center" width="100%" title="Go Back" />
+                <!-- <img src="picture/hand.gif" align="center" width="100%" title="Go Back" /> -->
+                
+			</a>
+		</div>
+	</div>
+	
+    <h1 align="center">Welcome to Eri's Web</h1>
+    <h2>Select the language</h2>
+    <p align="center">
+        <input type="button" value="English" onclick="location.href='/self_intro/self_intro_eng'" style="font-family: Blackadder ITC;">
+        <input type="button" value="中文" onclick="location.href='/self_intro/self_intro_ch'" style="font-family: DFKai-sb;">
+        <!-- <input type="button" value="中文" onclick="location.href='./templates/self_intro/self_intro_ch.html'" style="font-family: DFKai-sb;"> -->
+    </p>
+    <p id="copyright">
+        <img src="{{ url_for('static', filename='picture/copy.png')}}" width="15" /> Copyright 2019 Eri Hung All Rights Reserved.</p>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<!-- Since "render_template" in app.py, 'home.html' and 'layout.html' should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!-- Write "HOME" between the label of 'layout.html'. -->
+{% block body %}
+    <!--HOME-->
+
+    <div class="jumbotron text-center">
+            <h1>Welcome To FlaskApp</h1>
+            <p class="lead">HOME</p>
+    </div>
+{% endblock %}
+
+

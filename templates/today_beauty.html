@@ -1,0 +1,17 @@
+<!-- should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!-- Write the articles' title from data.py, and make links to articles/1, 2... -->
+{% block body %}
+    <div align="center">
+        {% for i in path %}
+            <div style="border:3px;border-style:dashed;border-color:#FFAC55;padding:5px;">
+                <img src="{{ url_for('static', filename=i) }}" align="center" width="30%" height="30%"/>
+            </div>
+            <br><br>
+        {% endfor %}
+    </div>
+    
+{% endblock %}
